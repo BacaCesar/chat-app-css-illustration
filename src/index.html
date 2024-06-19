@@ -2,22 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
     <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    
+    <title>Chat app css illustration</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="title">Titulo Principal</h1>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis
-        eos magnam earum numquam dignissimos eveniet asperiores a, minus neque
-        quibusdam odio est in eaque tempora consequatur veniam similique libero?
-      </p>
-      <a class="card__button" href="#">Pincha aquí</a>
-    </div>
+    <main class="main">
+      
+        <div class="mobile">
+          <div class="mobile__header">
+            <div class="mobile__profile">
+              <img src="./assets/images/arrow.svg" alt="icon arrow">
+              <img class="avatar" src="./assets/images/avatar.jpg" alt="image avatar Samuel">
+              <div class="mobile__user">
+                <span class="mobile__title">Samuel Green</span>
+                <span class="mobile__subtitle">Available to Walk</span>
+              </div>
+              <img class="mobile__dots" src="./assets/images/dots.svg" alt="dots icon menu">
+            </div>
+          </div>
+          <div class="moible__messages">
+            <div class="moible__messages mobile__message--otheruser">
+              <span class="moible__messages mobile__text--otheruser">That sounds great. I’d be happy to discuss more.</span>
+            </div>
+            <div class="moible__messages mobile__message--otheruser">
+              <span class="moible__messages mobile__text--otheruser">Could you send over some pictures of your dog, please?</span>
+            </div>
+            <div class="moible__messages mobile__message--user--images">
+              <img src="./assets/images/dog-image-1.jpg" alt="dog photo 1">
+              <img src="./assets/images/dog-image-2.jpg" alt="dog photo 2">
+              <img src="./assets/images/dog-image-3.jpg" alt="dog photo 3">
+            </div>
+            <div class="moible__messages mobile__message--user">
+              <span class="moible__messages mobile__text--user">Here are a few pictures. She’s a happy girl!</span>
+            </div>
+            <div class="moible__messages mobile__message--user">
+              <span class="moible__messages mobile__text--user">Can you make it?</span>
+            </div>
+            <div class="moible__messages mobile__message--otheruser">
+              <span class="moible__messages mobile__text--otheruser">She looks so happy! The time we discussed works. How long shall I take her out for?</span>
+            </div>
+            <div class="mobile__offer">
+              <div class="mobile__offer--circle"></div>
+              <span class="mobile__offer--text">30 minute walk</span>
+              <span class="mobile__ofer--price">$29</span>
+            </div>
+            <div class="mobile__offer">
+              <div class="mobile__offer--circle"></div>
+              <span class="mobile__offer--text">1 hour walk</span>
+              <span class="mobile__ofer--price">$49</span>
+            </div>
+          </div>
+          <div class="mobile__footer">
+            <div class="mobile__footer--text">Type a message...</div>
+            <div class="mobile__footer--circle">
+              <img class="mobile__footer--arrow" src="./assets/images/arrow-rigth.svg" alt="icon arrow rigth" >
+            </div>
+          </div>
+          
+        </div>
+      <div class="info">
+        <h1 class="info__title">Simple booking</h1>
+        <p class="info__text">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+        
+      </div>
+
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

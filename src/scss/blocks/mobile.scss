@@ -1,0 +1,69 @@
+@use '../mixins/pseudo.scss' as *;
+.mobile {
+  position: relative;
+  width: 247px;
+  height: 505px;
+  border-radius: 30px;
+  border: solid 10px white;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 64px;
+  box-shadow: 0 30px 60px -10px rgba(62, 39, 83, 0.25);
+  &__header {
+    position: absolute;
+    width: 228px;
+    height: 66px;
+    background-image: var(--linear-gradient);
+    border-radius: 20px 20px 6px 6px;
+    top: 0;
+    box-shadow: 0 0 13px 0 rgba(62, 39, 83, 0.25);
+    &::after {
+      @include pseudo(129px, 29px) {
+        background-color: white;
+        top: -11px;
+        left: 50%;
+        translate: -50%;
+        border-radius: 0 0 14px 14px;
+      }
+    }
+  }
+  &__profile {
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    width: 196px;
+    margin-inline: auto;
+    margin-top: 30px;
+  }
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2px;
+  }
+  &__dots {
+    margin-left: auto;
+  }
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+  }
+  &__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    color: var(--soft-pink-user);
+  }
+  &__messages {
+    &--otheruser {
+      width: 128px;
+      height: 34px;
+      background-color: var(--soft-pink-bgmessage);
+      border-radius: 10px 10px 4px 10px;
+    }
+  }
+}
