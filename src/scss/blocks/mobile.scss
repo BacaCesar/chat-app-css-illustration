@@ -58,12 +58,46 @@
     font-weight: 400;
     color: var(--soft-pink-user);
   }
-  &__messages {
-    &--otheruser {
-      width: 128px;
-      height: 34px;
-      background-color: var(--soft-pink-bgmessage);
-      border-radius: 10px 10px 4px 10px;
-    }
+  &__message--otheruser-1{
+    top: 90px;
+    position: absolute;
+    width: 128px;
+    height: 34px;
+    background-color: var(--soft-pink-bgmessage);
+    border-radius: 10px 10px 10px 4px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+     &__message--otheruser-2 {
+       top: 140px;
+       position: absolute;
+       width: 128px;
+       height: 34px;
+       background-color: var(--soft-pink-bgmessage);
+       border-radius: 10px 10px 10px 4px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+  &__text--otheruser{
+    top: 200px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 11px;
+    color: var(--soft-purple-user-text);
+  }
+  &__message--user--images{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: auto;
+  }
+  &__messages--images{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
   }
 }
+
