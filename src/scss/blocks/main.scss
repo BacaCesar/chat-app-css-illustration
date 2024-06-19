@@ -1,0 +1,24 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/resposive.scss' as *;
+.main{
+    &::after {
+            @include pseudo(510px, 1018px) {
+                left: -322px;
+                top: -609px;
+                background-image: var(--linear-gradient);
+                border-radius: 15.9375rem;
+                z-index: -1;
+                
+            }
+        }
+    &::before{
+        @include pseudo(510px, 1018px) {
+                background-image: var(--linear-gradient);
+                border-radius: 15.9375rem;
+                left: 188px;
+                top: 427px;
+                opacity: .15;
+            }
+        }
+
+    }

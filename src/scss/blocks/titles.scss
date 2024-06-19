@@ -1,1 +1,23 @@
+@use '../mixins/resposive.scss' as *;
 
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        color: var(--purple-dark);
+    }
+    &__text{
+        width: 311px;
+        font-family: 'Rubik', sans-serif;
+        font-size:16px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 28px;
+        color: var(--gray-text);
+    }
+}
