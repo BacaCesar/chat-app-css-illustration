@@ -7,12 +7,16 @@
   height: 505px;
   border-radius: 30px;
   border: solid 10px white;
-  background-color:var(--bg-mobile);
+  background-color: var(--bg-mobile);
   display: flex;
   align-items: center;
   margin-inline: auto;
   margin-top: 64px;
   box-shadow: 0 30px 60px -10px rgba(62, 39, 83, 0.25);
+  @include responsive(desktop) {
+    left: -350px;
+    top: 190px;
+  }
   &__header {
     position: absolute;
     width: 228px;
@@ -60,14 +64,14 @@
     font-weight: 400;
     color: var(--soft-pink-user);
   }
-  &__message--otheruser-1{
+  &__message--otheruser-1 {
     top: 77px;
     left: 8px;
     position: absolute;
     width: 128px;
     height: 34px;
     background-color: var(--soft-pink-bgmessage);
-    border-radius: 10px 10px 10px 4px; 
+    border-radius: 10px 10px 10px 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +87,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+  }
   &__message--otheruser-3 {
     top: 298px;
     left: 8px;
@@ -95,8 +99,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    }
-  &__text--otheruser{
+  }
+  &__text--otheruser {
     top: 200px;
     width: 112px;
     font-family: 'Rubik', sans-serif;
@@ -105,7 +109,7 @@
     line-height: 11px;
     color: var(--purple-text);
   }
-  &__message--user--images{
+  &__message--user--images {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -113,33 +117,31 @@
     left: 84.5px;
     top: 169px;
   }
-  &__messages--images{
-    
+  &__messages--images {
     height: 40px;
     width: 40px;
     border-radius: 10px;
   }
-  &__message--user-1{
+  &__message--user-1 {
     position: absolute;
     top: 217px;
     left: 92.5px;
     height: 34px;
     width: 128px;
     background-color: white;
-    border-radius: 10px 10px 4px 10px;  
-    
-  } 
-  &__message--user-2{
+    border-radius: 10px 10px 4px 10px;
+  }
+  &__message--user-2 {
     position: absolute;
     top: 259px;
     left: 140.5px;
     height: 23px;
     width: 80px;
     background-color: white;
-    border-radius:10px 10px 4px 10px ;
+    border-radius: 10px 10px 4px 10px;
   }
-  
-  &__text--user-1{
+
+  &__text--user-1 {
     position: absolute;
     width: 112px;
     height: 22px;
@@ -150,17 +152,16 @@
     font-weight: 400;
     line-height: 11px;
     color: var(--gray-text);
-   
   }
-    &__text--user-2 {
-      font-family: 'Rubik', sans-serif;
-      font-size: 8px;
-      font-weight: 400;
-      line-height: 11px;
-      color: var(--gray-text);
-      padding: 6px 8px;
-    }
-  &__footer--text{
+  &__text--user-2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 11px;
+    color: var(--gray-text);
+    padding: 6px 8px;
+  }
+  &__footer--text {
     position: absolute;
     top: 445px;
     left: 8px;
@@ -178,7 +179,7 @@
     justify-content: space-between;
     padding-left: 19px;
   }
-  &__footer--circle{
+  &__footer--circle {
     position: absolute;
     left: 184px;
     top: 450px;
@@ -187,12 +188,12 @@
     background-color: var(--purple-dark);
     border-radius: 100px;
   }
-  &__footer--arrow{
+  &__footer--arrow {
     position: absolute;
     top: 8px;
     left: 9px;
-    }
-  &__offer--container-1{
+  }
+  &__offer--container-1 {
     top: 351px;
     left: 8px;
     position: absolute;
@@ -209,8 +210,8 @@
     height: 32px;
     border-radius: 10px 10px 4px 10px;
     background: var(--linear-gradient);
-    }
-  &__offer--circle{
+  }
+  &__offer--circle {
     position: absolute;
     top: 10px;
     left: 8px;
@@ -218,8 +219,8 @@
     width: 12px;
     border: solid 1px var(--soft-pink-circle);
     border-radius: 100px;
-    }
-  &__offer--text{
+  }
+  &__offer--text {
     position: absolute;
     top: 11px;
     left: 28px;
@@ -229,15 +230,14 @@
     color: white;
     line-height: 11px;
   }
-&__offer--price{
-  position: absolute;
-  top: 11px;
-  left: 120px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: white;
-  line-height: 11px;
+  &__offer--price {
+    position: absolute;
+    top: 11px;
+    left: 120px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    line-height: 11px;
+  }
 }
-}
-
