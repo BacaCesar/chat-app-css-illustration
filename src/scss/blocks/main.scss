@@ -4,6 +4,7 @@
 .main {
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
   &::after {
     @include pseudo(510px, 1018px) {
       left: -322px;
